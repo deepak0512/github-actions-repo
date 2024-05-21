@@ -1,0 +1,18 @@
+name: 01-building-blocks
+on: push
+
+jobs:
+    echo-hello:
+        runs-on: windows11
+        steps:
+            - name: Say Hello
+              run: echo "Hello World!" 
+    echo-goodbye:
+        runs-on: windows12
+        steps:
+            - name: good bye
+              run: |
+                echo: "I will fail" 
+                exit 1
+            - name: Say goodbye
+              run: "GoodBye!"
